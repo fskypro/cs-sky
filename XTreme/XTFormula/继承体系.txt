@@ -1,0 +1,48 @@
+1、公开类说明
+	ExFormula：对公式解释完毕后，生成的公式类，通过公式对象能对公式进行传参计算
+	ExFormulaParser：公式解释器，调用 ExFormulaParser.Parse(...) 将返回一个 ExFormula 对象
+	如果公式语法错误，将会抛出 ErrorFormulaException 异常。ErrorFormulaException 有成员：
+		Formula：公式字符串
+		ErrorPoint：公司语法错误位置
+
+
+2、解释器继承体系：
+                                        ExFormulaTokenParser
+                                                 |
+        -----------------------------------------+---------------------------------------
+        |                   |                    |                   |                   |
+    ExArgParser     ExFunctionParser       ExNumericParser    ExOperatorParser    ExScopeParser
+
+	ExArgParser     ：参数解释器
+	ExFunctionParser：函数解释器
+	ExNumericParser ：数值解释器
+	ExOperatorParser：运算符解释器
+	ExScopeParser   ：括号解释器
+
+
+3、公式元素继承体系：
+                                              ExFormulaToken
+                                                   |
+         ------------------------------------------+-------------------------------------
+         |                  |                   |                    |                  |
+    ExArgToken         ExFuncToken        ExOperatorToken       ExScopeToken      ExNumericToken
+                            |                                                             |
+         -------------------+-------------------------------                   --------------------------
+         |     |      |           |           |             |                 |            |             |
+    ExSqrToken |  ExMaxToken  ExMinToken  ExRndToken  ExIntPartToken     ExIntToken   ExLongToken  ExDoubleToken
+               |
+          ExRoundToken
+
+	ExArgToken     ：参数元素
+	ExOperatorToken：运算符元素
+	ExScopeToken   ：括号元素（相当于嵌套公式）
+	ExIntToken     ：整型元素
+	ExLongToken    ：长整形元素
+	ExDoubleToken  ：浮点数元素
+
+	ExSqrToken     ：开方函数
+	ExMaxToken     ：取最大值函数
+	ExMinToken     ：去最小值函数
+	ExRndToken     ：取随机值函数
+	ExIntPartToken ：取整函数
+	ExRoundToken   ：四舍五入函数

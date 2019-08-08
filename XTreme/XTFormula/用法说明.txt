@@ -1,0 +1,79 @@
+一、说明
+	1、支持运算符（按优先级从高到低排序，同组的为同优先级）：
+		** ：乘方
+
+		*  ：乘
+		/  ：除
+		%  ：模余
+
+		+  ：加
+		-  ：减
+
+		<< ：左移（不支持浮点数）
+		>> ：右移（不支持浮点数）
+
+		&  ：与（不支持浮点数）
+
+		^  ：异或（不支持浮点数）
+
+		|  ：或（不支持浮点数）
+
+	2、支持的函数：
+		sqr   ：开方            ：sqr(底数, 指数)
+		max   ：取最大值        ：max(值1, 值2)
+		min   ：取最小值        ：min(值1, 值2)
+		rnd   ：取指定范围随机数：rnd(小值, 大值)
+		int   ：取整            ：int(值)
+		round ：四舍五入        ：round(浮点数)
+
+	3、抛出异常：
+		1）ExFormulaErrorException
+			表达式错误异常：
+				try
+				{
+					ExFormula p = ExFormula.Create("100 + 200 -");
+				}
+				catch(ExFormulaErrorException, ex)
+				{
+					ex.Formula;			// 公式：100 + 200 -
+					ex.point;			// 异常位置（后面有个双目运算符作为公式结束）：11
+				}
+
+		2）ExFormulaNoArgumentException
+			参数错误异常，没有给公式参数传入参数值：
+				try
+				{
+					ExFormula p = ExFormula.Create("100 + x1", "x1");
+					p.Calculate();			// 没有给参数 x1 传入值
+				}
+				catch(ExFormulaNoArgumentException, ex)
+				{
+					ex.Formula;		// 100 + x1
+					ex.ArgName;		// x1
+				}
+
+		3）运算过程中还可能有别的 C# 内置异常，譬如除零异常、浮点位操作异常等。
+
+
+二、实例
+	1、创建公式
+		ExFormula p = ExFormula.Create("34 - 2 ** 5 * 100 / (422 - x2 / x1)", "x1", "x2");
+
+		或：
+		string[] argNames = new string[]{"x1", "x2"}
+		ExFormula p = ExFormula.Create("34 - 2 ** 5 * 100 / (422 - x2 / x1)", argNames);
+
+		注意：argNames 仅仅是指出公式中允许出现的参数，不一定公式就一定要带这么几个参数。
+		公式中实际拥有的参数，可以通过以下方式获取：
+			p.Arguments;
+
+	2、使用公式
+		ExFormulaArgs args = new ExFormulaArgs();		// 创建参数值列表
+		args["x1"] = 444;								// 给参数赋值
+		args["x2"] = 2;
+		float a = (float)p.Calculate(args);				// 计算结果
+		int b = (int)p.Calculate(args);					// 计算结果
+		long c = (long)p.Calculate(args);				// 计算结果
+
+	3、注意：
+		先生成公式，后更换参数计算，这样会比每次都调用 ExFormula.Create(...) 速度回快很多

@@ -1,0 +1,8 @@
+H:\work\nostyle\XTreme\bin\Release\XTUI.dll
+H:\work\nostyle\XTreme\bin\Release\XTUI.pdb
+H:\work\nostyle\XTreme\XTUI\obj\Release\XTreme.XTUI.AboutDialog.resources
+H:\work\nostyle\XTreme\XTUI\obj\Release\XTUI.Properties.Resources.resources
+H:\work\nostyle\XTreme\XTUI\obj\Release\XTUI.csproj.GenerateResource.Cache
+H:\work\nostyle\XTreme\XTUI\obj\Release\XTUI.dll
+H:\work\nostyle\XTreme\XTUI\obj\Release\XTUI.pdb
+H:\work\nostyle\XTreme\XTUI\obj\Release\XTUI.csprojResolveAssemblyReference.cache

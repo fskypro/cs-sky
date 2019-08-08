@@ -1,0 +1,4 @@
+H:\work\nostyle\Xtreme\bin\Debug\XTJson.dll
+H:\work\nostyle\Xtreme\bin\Debug\XTJson.pdb
+H:\work\nostyle\Xtreme\ExtremeJson\obj\Debug\XTJson.dll
+H:\work\nostyle\Xtreme\ExtremeJson\obj\Debug\XTJson.pdb

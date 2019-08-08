@@ -1,0 +1,17 @@
+H:\work\nostyle\XTreme\Test\bin\Debug\Test.exe.config
+H:\work\nostyle\XTreme\Test\bin\Debug\Test.exe
+H:\work\nostyle\XTreme\Test\bin\Debug\Test.pdb
+H:\work\nostyle\XTreme\Test\bin\Debug\XTJson.dll
+H:\work\nostyle\XTreme\Test\bin\Debug\XTreme.dll
+H:\work\nostyle\XTreme\Test\bin\Debug\XTreme.pdb
+H:\work\nostyle\XTreme\Test\obj\Debug\Test.Form1.resources
+H:\work\nostyle\XTreme\Test\obj\Debug\Test.Properties.Resources.resources
+H:\work\nostyle\XTreme\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+H:\work\nostyle\XTreme\Test\obj\Debug\Test.exe
+H:\work\nostyle\XTreme\Test\obj\Debug\Test.pdb
+H:\work\nostyle\XTreme\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+H:\work\nostyle\XTreme\Test\bin\Debug\XTPList.dll
+H:\work\nostyle\XTreme\Test\bin\Debug\XTPList.pdb
+H:\work\nostyle\XTreme\Test\bin\Debug\XTUI.dll
+H:\work\nostyle\XTreme\Test\bin\Debug\XTUI.pdb
+H:\work\nostyle\XTreme\Test\bin\Debug\XTJson.pdb

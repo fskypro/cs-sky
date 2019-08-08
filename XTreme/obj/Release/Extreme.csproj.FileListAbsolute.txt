@@ -1,0 +1,5 @@
+H:\work\nostyle\Extreme\bin\Release\Extreme.dll
+H:\work\nostyle\Extreme\bin\Release\Extreme.pdb
+H:\work\nostyle\Extreme\Extreme\obj\Release\Extreme.dll
+H:\work\nostyle\Extreme\Extreme\obj\Release\Extreme.pdb
+H:\work\nostyle\Extreme\Extreme\obj\Release\Extreme.csprojResolveAssemblyReference.cache

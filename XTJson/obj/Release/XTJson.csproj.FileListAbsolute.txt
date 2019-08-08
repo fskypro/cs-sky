@@ -1,0 +1,4 @@
+H:\work\nostyle\XTreme\bin\Release\XTJson.dll
+H:\work\nostyle\XTreme\bin\Release\XTJson.pdb
+H:\work\nostyle\XTreme\XTJson\obj\Release\XTJson.dll
+H:\work\nostyle\XTreme\XTJson\obj\Release\XTJson.pdb

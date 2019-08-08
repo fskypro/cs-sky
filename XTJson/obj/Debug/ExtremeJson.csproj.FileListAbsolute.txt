@@ -1,0 +1,4 @@
+H:\work\nostyle\Extreme\bin\Debug\ExtremeJson.dll
+H:\work\nostyle\Extreme\bin\Debug\ExtremeJson.pdb
+H:\work\nostyle\Extreme\ExtremeJson\obj\Debug\ExtremeJson.dll
+H:\work\nostyle\Extreme\ExtremeJson\obj\Debug\ExtremeJson.pdb

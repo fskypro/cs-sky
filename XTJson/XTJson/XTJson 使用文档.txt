@@ -1,0 +1,161 @@
+一、说明
+	XTJson 包含以下三部分：
+	1、读取 JSON 文件（可带注释）
+	2、解释 JSON 格式串（可带注释）
+	4、写出 JSON 配置
+
+二、读取 JSON 文件
+	1、打开一个 UTF-8 编码的 JSON 文件
+		XTJsonRoot root = XTJson.Open(string path, bool ignorDoc = true, bool isCache = true)
+		参数：
+			path    : 打开的 JSON 文件路径
+			ignorDoc: 是否忽略配置前的注释文档，如果忽略注释文档，则下次保存时，文档将会丢失，一般只读取不写入的 JSON 可以忽略文档
+			isCache : 是否作缓存处理（如果为 true，则下次打开时，不需要解释，直接从缓存中读取）
+			          如果要去掉缓存，调用 Purge()
+		有可能抛出异常：
+			XTJsonReadIOExcetion: XTJsonException									：表示 JSON 文件不存在或者无法读取
+			XTJsonInvalidSourceException: XTJsonParseException: XTJsonException		：表示 JSON 文件格式不正确（long InvalidPoint 成员能指出不正确位置）
+
+		说明：如果要打开的文件不存在，或该文件是一个空文件，则会自动创建一个，并返回一个空的 XTJsonRoot 实例
+
+	2、打开一个指定编码的 JSON 文件
+	public static XTJsonRoot Open(string path, Encoding enc, bool ignorDoc = true, bool isCache = true)
+		参数：
+			enc : 表示 JSON 文件编码方式
+			其他参数如上 1）点
+		异常：
+			与上面第 1 点一致
+
+	3、返回值
+		打开成功则返回一个 XTJsonRoot 实例，该实例继承于 XTJsonDict，表示其对应一个 JSON 文件
+		XTJsonRoot 包含以下属性成员：
+			1）string Path                 ：表示 JSON 文件的路径
+			2）Encoding Encoding           ：表示 JSON 文件的编码
+			3）List<XTJsonComment> Document：表示 JSON 文件开头的注释文档（注意：如果文档不存在，则返回 null，而不是空列表）
+
+		XTJson包含三个方法：
+			void Save(uint warps = 1)
+			void SaveAs(string path, uint warps=1, List<XTJsonComment> doc=null, bool isCache = true)
+			SaveAs(string path, Encoding enc, uint warps=1, List<XTJsonComment> doc = null, bool isCache = true)
+			这些方法将会在下面“保存”一节说明
+
+	4、取消缓存
+		调用 bool XTJson.Purge(string path) 可以对指定路径的 JSON 文件进行缓存清除操作。
+		注意：调用 Purge 后，并不表示把 JsonRoot 实例占用的内存释放掉，而是指将其从缓存中脱离，
+			缓存的作用是，当打开一个 JSON 文件，对该文件进行缓存处理，下次再要 Open 时，不需要再次解释，而直接从缓存中读取。
+			Purge 后，如果再次 Open 某个 JSON 文件，则需要重新对该文件进行解释。
+
+三、解释 JSON 格式字符串
+	1、应用
+		public static XTJsonDict Explain(string jstream)
+		参数：
+			jstream：字符串形式的 JSON 串 
+		实例：
+			XTJsonDict jdict = XTJson.Explain("{\"key\": 2323}");
+
+		注意：该函数返回的是 XTJsonDict，而不是 XTJsonRoot，因为它不对应任何 JSON 文件。
+
+	2、返回值
+		XTJsonDict 包含所有 Dictionayr<XTJsonData, XTJsonData> 的属性
+		另外还包含以下保存方法：
+		public XTJsonRoot SaveAs(string path, uint warps = 1, List<XTJsonComment> doc = null, bool isCache = true)
+		public XTJsonRoot SaveAs(string path, Encoding enc, uint warps = 1, List<XTJsonComment> doc = null, bool isCache = true)
+
+		这些方法会在下面“保存”一节中介绍
+
+四、写出 JSON 配置
+	1、对 XTJsonRoot 写出：
+		1）void Save(uint warps = 1)
+			保存该 JSON 文件（一般对 JSON 数据编辑后，可以通过该方法进行保存）
+			参数：warps：表示对第几级嵌套字典进行折行处理，如字典：{"aa": {33: {"bb": cc}}}
+			    如果 warps = 0，则直接导出为：{"aa": {33: {"bb": cc}}}
+			    如果 warps = 1，则导出为：{"aa": {
+			                              		33: {"bb": cc}}
+			                               }
+			    如果 wraps = 2，则导出为：{"aa": {
+			                              		33: {
+			                              			"bb": cc}
+			                              		}
+			                              }
+
+		2）void SaveAs(string path, uint warps=1, List<XTJsonComment> doc=null, bool isCache = true)
+			对该 JSON 文件进行另存
+			参数：
+				path   ：要保存的路径
+				warps  ：表示对第几级嵌套字典进行折行处理
+				doc    ：文件头注释文档
+				isCache：是否缓存
+
+			注意：如果 isCache 为 true，则将会以新的路径缓存，否则仍然是旧的路径缓存
+
+		3）void SaveAs(string path, Encoding enc, uint warps=1, List<XTJsonComment> doc = null, bool isCache = true)
+			enc 表示写出 JSON 文件的编码方式
+			其他与上 2）点一致
+
+	2、对 XTJsonDict 写出：
+		1）XTJsonRoot SaveAs(string path, uint warps = 1, List<XTJsonComment> doc = null, bool isCache = true)
+			参数：
+				path   ：写出 JSON 路径
+				warps  ：第几层嵌套字典外折行
+				doc    ：配置头注释文档
+				isCache：是否放入缓存
+
+			说明：如果 isCache 为 true，则函数返回被缓存的 XTJsonRoot，否则返回 null
+
+		2）XTJsonRoot SaveAs(string path, Encoding enc, uint warps = 1, List<XTJsonComment> doc = null, bool isCache = true)
+			参数：
+				enc：表示写出文件的编码方式
+				其他与上面 1）点一致
+
+五、XTJson 数据结构
+	1、注释
+		XTJson.XTJsonComment
+		生成一条注释：
+			XTJsonComment singleComment = new XTJsonComment(XTJsonCommentType.SingleLine, "单行注释文本（不用带注释符号：//）");
+			XTJsonComment multiComment = new XTJsonComment(XTJsonCommentType.MultiLine, "多行注释文本（不用带注释符号：/**/）");
+		
+		提示：构建一个注释列表，将可以作为上面 XTJsonRoot.Write(...doc..) 的文档参数 doc，写出到 JSON 配置，如：
+			List<XTJsonComment> doc = new List<XTJsonComment>();
+			doc.Add(new XTJsonComment(XTJsonCommentType.SingleLine, "这是第一行注释"));
+			doc.Add(new XTJsonComment(XTJsonCommentType.MultiLine, "这是第二行注释\n这是第三行注释"));
+			
+			XTJsonDict jdict = new XTJsonDict()
+			jdict["key"] = 100;
+			XTJsonRoot jroot = jdict.SaveAs("c:/a.json", 1, doc);
+
+	2、JSON 数据
+		XTJsonNone   : 等价于 null（创建方式：new XTJsonNone()）
+
+		XTJsonInt    : 等价于 int（创建方式：new XTJsonInt(value) 或：(XTJsonInt)value）
+		XTJsonLong   : 等价于 long（创建方式：new XTJsonLong(value) 或：(XTJsonLong)value）
+		XTJsonHexInt : 等价于 int，但是可以导出为十六进制格式（创建方式：new XTJsonHexInt(value) 或：(XTJsonHexInt)value）
+		XTJsonHexLong: 等价于 long，但是可以导出为十六进制格式（创建方式：new XTJsonHexLong(value) 或：(XTJsonHexLong)value）
+		XTJsonDouble : 等价于 double（创建方式：new XTJsonDouble(value) 或：(XTJsonDouble)value）
+
+		XTJsonBool   : 等价于 bool（创建方式：new XTJsonBool(value) 或：(XTJsonBool)value）
+		XTJsonString : 等价于 string（创建方式：new XTJsonString(value) 或：(XTJsonString)value）
+
+		XTJsonList   : 等价于 List<XTJsonData>（创建方式：new XTJsonList() 或：new XTJsonList(value)，value 为一个 List<XTJsonData> 实例）
+		XTJsonDict   : 等价于 Dictionary<XTJsonData, XTJsonData>（创建方式：new XTJsonDict() 或：new XTJsonDict(value)，value 为一个 Dictionary<XTJsonData, XTJsonData> 实例）
+
+		以上数据转换为 C# 库类型都是显式转换，如：int v = (int)(new XTJsonInt(3));
+		C# 库类型要转换为以上类型，都是隐式转换，如：XTString str = "xxxx";
+
+六、扩展
+	1、标准 JSON 文件字典的 Key 只允许是字符串，但是 XTJson 允许字典的 Key 为：
+		bool、double、int、long、hexint、hexlong、string：
+
+		{
+			"aa": 234,
+			1234: "bb",
+			0x456ef: 333
+		}
+		
+		字典的 Key 不支持：dict、list、null
+
+	2、标准 JSON 文件，其集合最后一个元素结束不能带逗号，但是 XTJson 允许带逗号。如：
+		{
+			"list": [1, 3, 4, ],				// 4 后面和“]”后面允许带逗号结束
+		}
+		但空集合内，如这样 “[,]”是不允许的。
+	

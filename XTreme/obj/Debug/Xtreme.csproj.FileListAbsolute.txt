@@ -1,0 +1,5 @@
+H:\work\nostyle\Xtreme\bin\Debug\XTtreme.dll
+H:\work\nostyle\Xtreme\bin\Debug\XTtreme.pdb
+H:\work\nostyle\Xtreme\Extreme\obj\Debug\XTtreme.dll
+H:\work\nostyle\Xtreme\Extreme\obj\Debug\XTtreme.pdb
+H:\work\nostyle\XTreme\XTreme\obj\Debug\XTreme.csprojResolveAssemblyReference.cache

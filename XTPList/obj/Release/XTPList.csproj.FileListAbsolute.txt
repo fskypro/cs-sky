@@ -1,0 +1,4 @@
+H:\work\nostyle\XTreme\bin\Release\XTPList.dll
+H:\work\nostyle\XTreme\bin\Release\XTPList.pdb
+H:\work\nostyle\XTreme\XTPList\obj\Release\XTPList.dll
+H:\work\nostyle\XTreme\XTPList\obj\Release\XTPList.pdb

@@ -1,0 +1,103 @@
+一、说明
+	1、该 XML 为一个简单的 XML 配置，不带 XML 头，直接就是标签。如：
+	<root>
+		<aa> 3 </aa>
+	</root>
+
+	2、该 XML 不支持属性。如下面是不允许的：
+	<root, attr=33>
+		<aa> 3 </aa>
+	</root>
+
+	3、该 XML 标记全为正则表达式解释，因此性能有限。对于大文件请不要用
+
+一、读取 XML 文件
+	1、先创建一个以指定路径为根的 SimpleXML：
+		ExSimpleXML xml = new ExSimpleXML("C:/");
+		这样将以 C:/ 为根目录，随便读取其下的 xml 文件
+
+	2、读取 C:/ 下的一个 XML 文件：
+		1）重载方法 1：
+			ExSimpleXMLSection Open(string file) 
+			打开 UTF-8 编码的 XML 文件，如：
+			ExSimpleXMLSection xmlSect = xml.Open("aa.xml");				// aa.xml 位于 C:/ 盘下
+
+		2）重载方法 2：
+			public ExSimpleXMLSection Open(string file, bool create) 
+			如果文件不存在，则主动创建：
+			ExSimpleXMLSection xmlSect = xml.Open("aa/bb.xml", true);		// aa/bb.xml 位于 C:/ 盘下
+
+		3）重载方法 3：
+			public ExSimpleXMLSection Open(string file, bool create, Encoding enc)
+			打开指定编码的 XML 文件：
+			ExSimpleXMLSection xmlSect = xml.Open("aa.xml");				// aa.xml 位于 C:/ 盘下
+
+二、缓存
+	读取到的 XML 文件会进行缓存，使得下次再打开时，不需要再解释。
+	如果要取消缓存，调用：
+		public bool Purge(string file)
+	
+		如果指定文件在缓存中，则返回 true，否则返回 false
+
+三、保存 XML
+	上述第一点中，读取一个 XML，将会返回一个 ExSimpleXMLSection 对象。该对象表示一个 XML 标签。
+	调用该对象的 Save 方法，可以将 XML 保存到打开时的路径。如：
+		ExSimpleXMLSection xmlSect = xml.Open("aa.xml");
+		xmlSect.WriteInt("xxx", 323);
+		xmlSect.Save();
+
+四：使用 XML 数据
+	每个 ExSimpleXMLSection 对象表示一个 XML 标记，通过该对象，能将 XML 数据表述为你想要表述的数据对象。
+	如：
+	<root>
+		<aa> 1 </aa> 
+		<bb> 1 2 3 </bb>
+		<cc> vvv
+			<item> 888 </item>
+			<item> 999 </item>
+		</cc>
+		<dd> &lt;世界&gt;你好 </dd>
+	<root>
+
+	xmlSect.ReadInt("aa");					// 结果为 1
+	xmlSect.ReadString("aa");				// 结果为 "1"
+	xmlSect["aa"].AsInt;					// xmlSect["aa"] 表示获得 <aa> 标签，结果为 1
+
+	xmlSect.ReadVector3("bb");				// 结果为 float[3]{1.0f, 2.0f, 3.0f}
+	xmlSect.ReadString("bb");				// 结果为 "1 2 3"
+	xmlSect["bb"].AsString;					// xmlSect["bb"] 表示获得 <bb> 标签，结果仍然是 "1 2 3"
+
+	xmlSect.ReadString("cc");				// 结果为 "vvv"
+
+	xmlSect["cc"].ReadInts("item");			// 结果为 List<int>({888, 999})
+	xmlSect["cc"].ReadInt("item");			// 结果为 888（取第一个）
+
+	xmlSect.ReadString("dd");				// 结果为 "<世界>你好"（注意：&lt;代表小于号，&gt; 代表大于号，这个跟标准 XML 是一样的）
+	xmlSect["dd"].AsString;					// 如上
+
+	附：
+		如下是 ExSimpleXML 支持的转义符：
+		原字符         转义符
+		<              &lt;
+		>              &gt;
+		空格           &#x20;
+		\t             &#x09;
+		\n             &#x0a;
+		\r             &#x0d;
+
+五、XML 数据遍历提取
+	ExSimpleXMLSection 提供了一个遍历提取 XML 节点的方法：
+		List<T> TravelGets<T>(ExSimpleXMLValueFilter<T> fnFilter)
+		参数：
+			fnFilter：为过滤器代理，定义如下：
+				delegate int ExSimpleXMLValueFilter<T>(ExSimpleXMLSection sect, out T value);
+
+		调用该函数后，系统会遍历整个 ExSimpleXMLSection 对象，每到一个对象，fnFilter 代理都会被调用。
+		系统会根据 fnFilter 的返回值，做不同操作：
+			0， 则 section 被忽略
+			-1，则退出遍历
+			1， 则将 fnFilter 中的第二个参数添加到结果列表
+		
+		返回：
+			调用该函数后，会返回一个列表，列表中的元素均为 fnFilter 返回 1 时，
+			fnFilter 第二个参数 out T value 中传出的值。

@@ -1,0 +1,8 @@
+H:\work\nostyle\Xtreme\Extreme\obj\Release\Xtreme.csprojResolveAssemblyReference.cache
+H:\work\nostyle\Xtreme\Extreme\obj\Release\XTtreme.dll
+H:\work\nostyle\Xtreme\Extreme\obj\Release\XTtreme.pdb
+H:\work\nostyle\XTreme\bin\Release\XTreme.dll
+H:\work\nostyle\XTreme\bin\Release\XTreme.pdb
+H:\work\nostyle\XTreme\XTreme\obj\Release\XTreme.csprojResolveAssemblyReference.cache
+H:\work\nostyle\XTreme\XTreme\obj\Release\XTreme.dll
+H:\work\nostyle\XTreme\XTreme\obj\Release\XTreme.pdb

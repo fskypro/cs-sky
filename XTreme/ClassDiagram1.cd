@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="XTreme.ExAttribute.EnumStuffs" Collapsed="true">
+    <Position X="45.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIEAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>ExAttributes\EnumStuffs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExDebug.ExStackFrame" Collapsed="true">
+    <Position X="49" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAACI=</HashCode>
+      <FileName>ExDebug\EXDebug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExException" Collapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExMath" Collapsed="true">
+    <Position X="50.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExMath\ExMath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormula" Collapsed="true">
+    <Position X="49" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAQAFEAAAAAAABCAABEAAIAABBAAAIAA=</HashCode>
+      <FileName>ExFormula\ExFormula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaArg" Collapsed="true">
+    <Position X="50.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAIAgAAAAAQAAAAAAIAgAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaArgs" Collapsed="true">
+    <Position X="52.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAEAAAACAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaException" Collapsed="true">
+    <Position X="41.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaErrorException" Collapsed="true">
+    <Position X="40.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAABAQAAAAABAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaCalculateException" Collapsed="true">
+    <Position X="43" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaNoArgumentException" Collapsed="true">
+    <Position X="43" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAIAAAAAAABAAAAAAABAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaParser" Collapsed="true">
+    <Position X="45.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBAAQAAAAIAAAAABAABAAAAAEBAQAAAAABAAABwA=</HashCode>
+      <FileName>ExFormula\ExFormulaParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaToken" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFormulaTokenParser" Collapsed="true">
+    <Position X="5.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokenParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExArgParser" Collapsed="true">
+    <Position X="0.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokenParsers\ExArgumentParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFunctionParser" Collapsed="true">
+    <Position X="3" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAEAgAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokenParsers\ExFunctionParsers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExNumericParser" Collapsed="true">
+    <Position X="5.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAgAAAAAAABIAAAAAQAAAAAAAAAEQAABA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokenParsers\ExNumericParsers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExOperatorParser" Collapsed="true">
+    <Position X="7.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokenParsers\ExOperatorParsers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExScopeParser" Collapsed="true">
+    <Position X="9.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokenParsers\ExScopeParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExArgToken" Collapsed="true">
+    <Position X="8.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExArgToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExFuncToken" Collapsed="true">
+    <Position X="18.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAgAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExFunctionToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExSqrToken" Collapsed="true">
+    <Position X="24" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExFunctionToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExMaxToken" Collapsed="true">
+    <Position X="12.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExFunctionToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExMinToken" Collapsed="true">
+    <Position X="15" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExFunctionToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExRndToken" Collapsed="true">
+    <Position X="17.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExFunctionToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExIntPartToken" Collapsed="true">
+    <Position X="19.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExFunctionToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExRoundToken" Collapsed="true">
+    <Position X="21.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExFunctionToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExNumericToken" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAAAAAAE4BeLAgAAAiIAAIAAAgEAgAIAByA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExNumericTokens.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExLongToken" Collapsed="true">
+    <Position X="1.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAEoBCAAgAAAAQAAIAAAAEAAAIAAiA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExNumericTokens.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExDoubleToken" Collapsed="true">
+    <Position X="3.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAEgBCAAgAAAgQgAIAAAAAAAAIAAiA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExNumericTokens.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExOperatorToken" Collapsed="true">
+    <Position X="6" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAkAAAAAAEAQBAQAAAACAACAAAAAEAAEAAIAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExOperatorToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExFormula.ExScopeToken" Collapsed="true">
+    <Position X="10.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaTokens\ExScopeToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExIO.ExPath" Collapsed="true">
+    <Position X="52.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExIO\ExPath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.ExSimpleXML" Collapsed="true">
+    <Position X="45.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAICAAAAAAAAAABAAgAAAAAAABAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXML.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.SXMLException" Collapsed="true">
+    <Position X="11.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACIAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.ErrorXMLException" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQCAABAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.InvalidTagXMLException" Collapsed="true">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.NoEndMarkXMLException" Collapsed="true">
+    <Position X="9.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.EmptyTagXMLExceptin" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.UnmatchTagXMLException" Collapsed="true">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.UnterminatedXMLException" Collapsed="true">
+    <Position X="16" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.UnstartedXMLException" Collapsed="true">
+    <Position X="18.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.ErrorCommentXMLException" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.ErrorTagNameXMLException" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.FormatValueXMLException" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExSimpleXML.ExSimpleXMLSection" Collapsed="true">
+    <Position X="47.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEYAJIQEAAJAGCgACiAwgASAhARkAyJfIBgigABABSg=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExText.ExString" Collapsed="true">
+    <Position X="50.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAIAAAAABAAAAAAAAAAAAMAAAAAEAAAEAAAAA=</HashCode>
+      <FileName>ExText\ExString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapperBase" Collapsed="true">
+    <Position X="1.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapper" Collapsed="true">
+    <Position X="0.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExParamsCBWrapper" Collapsed="true">
+    <Position X="2.75" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapperBase1&lt;A1&gt;" Collapsed="true">
+    <Position X="18.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapper1&lt;A1&gt;" Collapsed="true">
+    <Position X="17.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExParamsCBWrapper1&lt;A1&gt;" Collapsed="true">
+    <Position X="19.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapperBase2&lt;A1, A2&gt;" Collapsed="true">
+    <Position X="13.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapper2&lt;A1, A2&gt;" Collapsed="true">
+    <Position X="12.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExParamsCBWrapper2&lt;A1, A2&gt;" Collapsed="true">
+    <Position X="14.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapperBase3&lt;A1, A2, A3&gt;" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapper3&lt;A1, A2, A3&gt;" Collapsed="true">
+    <Position X="16.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExParamsCBWrapper3&lt;A1, A2, A3&gt;" Collapsed="true">
+    <Position X="18.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapperBase4&lt;A1, A2, A3, A4&gt;" Collapsed="true">
+    <Position X="1.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCallback4&lt;A1, A2, A3, A4&gt;" Collapsed="true">
+    <Position X="0.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExParamsCallback4&lt;A1, A2, A3, A4&gt;" Collapsed="true">
+    <Position X="2.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCBWrapperBase5&lt;A1, A2, A3, A4, A5&gt;" Collapsed="true">
+    <Position X="7.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExCallback5&lt;A1, A2, A3, A4, A5&gt;" Collapsed="true">
+    <Position X="6.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExParamsCallback5&lt;A1, A2, A3, A4, A5&gt;" Collapsed="true">
+    <Position X="8.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XTreme.ExUtilities.ExDateTime" Collapsed="true">
+    <Position X="47.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIBAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExDateTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="XTreme.ExSimpleXML.RePtns" Collapsed="true">
+    <Position X="45.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEBAgAAAAAAAAAAACAAAAAAIgAAAAAQ=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXML.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="XTreme.ExFormula.Operator" Collapsed="true">
+    <Position X="49" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAMAAAEAAAAEAAAgAAAAAAAAAASAgAAgAAAAAAAAAAQ=</HashCode>
+      <FileName>ExFormula\ExFormulaDefine.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="XTreme.ExFormula.ExFormulaArgGetter" Collapsed="true">
+    <Position X="45.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExFormula\ExFormulaArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExSimpleXML.ExSimpleXMLValueFilter&lt;T&gt;" Collapsed="true">
+    <Position X="52.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExSimpleXML\ExSimpleXMLSection.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExVoidFunc" Collapsed="true">
+    <Position X="45.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExVoidFunc&lt;T&gt;" Collapsed="true">
+    <Position X="52.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExVoidFunc&lt;T1, T2&gt;" Collapsed="true">
+    <Position X="50.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExVoidFunc&lt;T1, T2, T3&gt;" Collapsed="true">
+    <Position X="49" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAEAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExVoidFunc&lt;T1, T2, T3, T4&gt;" Collapsed="true">
+    <Position X="47.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAEAAAAAEAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExVoidFunc&lt;T1, T2, T3, T4, T5&gt;" Collapsed="true">
+    <Position X="47.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAEAAAAAEAAAAABAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExVoidFunc&lt;T1, T2, T3, T4, T5, T6&gt;" Collapsed="true">
+    <Position X="49" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAABAEAAAAAEAAAAABAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExVoidFunc&lt;T1, T2, T3, T4, T5, T6, T7&gt;" Collapsed="true">
+    <Position X="45.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAABBAEAAAAAEAAAAABAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExRetFunc&lt;Ret&gt;" Collapsed="true">
+    <Position X="47.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExRetFunc&lt;Ret, T&gt;" Collapsed="true">
+    <Position X="45.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExRetFunc&lt;Ret, T1, T2&gt;" Collapsed="true">
+    <Position X="52.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExRetFunc&lt;Ret, T1, T2, T3&gt;" Collapsed="true">
+    <Position X="50.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAEAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExRetFunc&lt;Ret, T1, T2, T3, T4&gt;" Collapsed="true">
+    <Position X="49" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAEAAAAAEAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExRetFunc&lt;Ret, T1, T2, T3, T4, T5&gt;" Collapsed="true">
+    <Position X="47.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAEAAAAAEAAAAABAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExRetFunc&lt;Ret, T1, T2, T3, T4, T5, T6&gt;" Collapsed="true">
+    <Position X="49" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAABAEAAAAAEAAAAABAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="XTreme.ExUtilities.ExRetFunc&lt;Ret, T1, T2, T3, T4, T5, T6, T7&gt;" Collapsed="true">
+    <Position X="50.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAABBAEAAAAAEAAAAABAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ExUtilities\ExFunc.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>
